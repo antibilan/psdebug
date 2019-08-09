@@ -17,7 +17,8 @@ style="height: 20px; width: 100%; background-color: #00FFFF; font-size: large; f
     </div>
 	<form method="post">
 	<input type="radio" name="answer" value="a1">Enable Standart debug<Br>
-	<input type="radio" name="answer" value="a2">Disable<Br>
+	<input type="radio" name="answer" value="a2">Enable Standart debug + SQL<Br>
+	<input type="radio" name="answer" value="a3">Disable<Br>
     <input type="submit" name="test" id="test" value="RUN" /><br/>
 
 <?php
@@ -33,6 +34,12 @@ style="height: 20px; width: 100%; background-color: #00FFFF; font-size: large; f
 		#php_uname();
 	}
 	elseif(array_key_exists('answer',$_POST) && $_POST['answer']=='a2'){
+		enable("full");
+		write_file($file);
+		status($file);
+		#php_uname();
+	}
+	elseif(array_key_exists('answer',$_POST) && $_POST['answer']=='a3'){
 		disable("debug");
 		write_file($file);
 		status($file);
