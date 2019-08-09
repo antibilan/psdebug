@@ -10,7 +10,7 @@ require("functions.php");
 style="height: 20px; width: 100%; background-color: #00FFFF; font-size: large; font-weight: 100;">
 		<br />
         <p><?php
-        echo "hotfix";
+        #echo "hotfix";
         ?></p>
 		<br />			
 		
