@@ -1,3 +1,5 @@
+Check PHP #2
+
 Check PHP
 
 New line
